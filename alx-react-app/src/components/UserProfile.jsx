@@ -1,4 +1,4 @@
-function UserProfile(props) {
+const UserProfile = (props) => {
     return (
         <>
             <h2>{props.name}</h2>
@@ -6,6 +6,6 @@ function UserProfile(props) {
             <p>{props.bio}</p>
         </>
     );
-}
+};
 
 export default UserProfile;
