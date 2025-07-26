@@ -10,5 +10,5 @@
 import React from 'react';
 
 const DataContext = React.createContext();
-export const UserContext = DataContext;
+export default DataContext;
 
