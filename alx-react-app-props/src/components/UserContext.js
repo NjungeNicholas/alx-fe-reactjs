@@ -9,6 +9,6 @@
 // Remove the userData props passed through ProfilePage and UserInfo, as these will no longer be necessary.
 import React from 'react';
 
-const DataContext = React.createContext();
-export default DataContext;
+const UserContext = React.createContext();
+export default UserContext;
 
