@@ -6,10 +6,14 @@ function App() {
   const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
   return (
-  // <ProfilePage userData={userData} />;
-    <UserContext.Provider value={userData}>
-      <ProfilePage />
-    </UserContext.Provider>
+    <>
+      <UserContext.Provider value={userData}>
+        <ProfilePage />
+      </UserContext.Provider>
+      <footer>
+        <p>© 2023 My React App</p>
+      </footer>
+    </>
   );
 }
 
