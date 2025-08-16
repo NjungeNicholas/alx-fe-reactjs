@@ -47,7 +47,7 @@ function Search() {
             <h2>{userData.name}</h2>
             <img src={userData.avatar_url} alt={`${userData.name}'s avatar`} />
             <p>{userData.name}</p>
-            <a style={{maxWidth: '50%'}} href={userData.html_url} target="_blank" rel="noopener noreferrer">
+            <a style={{maxWidth: '50%'}} href={userData.login} target="_blank" rel="noopener noreferrer">
               View Profile
             </a>
         </div>
