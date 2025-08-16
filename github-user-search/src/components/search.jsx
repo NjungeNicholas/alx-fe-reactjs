@@ -13,7 +13,7 @@ function Search() {
 
     const handleSubmit = (e) => {
       e.preventDefault(); // Prevent form submission
-      setLoading(true);
+      setLoading("loading...");
       setError(false);
       setUserData(null);
 
@@ -23,7 +23,7 @@ function Search() {
           setLoading(false);
         })
         .catch(() => {
-          setError(true);
+          setError("Looks like we can't find the user.");
           setLoading(false);
         });
     };
@@ -40,8 +40,8 @@ function Search() {
         <button type="submit">Search</button>
       </form>
 
-      {loading && <p>Loading...</p>}
-      {error && <p>Looks like we can't find the user.</p>}
+      {loading && <p>{loading}</p>}
+      {error && <p>{error}</p>}
       {userData && (
         <div>
             <h2>{userData.name}</h2>
